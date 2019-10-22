@@ -4,13 +4,13 @@ public class Main
 {
     public static void main(String[] args)
     {
-        Integer[] n;
+        int[] n;
         while (true)
         {
             String[] s = JOptionPane.showInputDialog("Entre com os valores separados por ',' :").split(",");
             try
             {
-                n = new Integer[s.length];
+                n = new int[s.length];
                 for (int i = 0; i < n.length ; i++)
                 {
                     n[i] = Integer.parseInt(s[i]);
@@ -26,7 +26,7 @@ public class Main
         String print = new String();
         for (int i = 0; i < n.length; i++)
         {
-            print += n[i].toString();
+            print += n[i];
             if(i != n.length - 1)
                 print += ", ";
         }
